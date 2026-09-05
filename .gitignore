@@ -110,3 +110,4 @@ Keystore/keystore_credentials*.txt
 # Build symbol archives and macOS-only Firebase editor plugin (not needed for Android/Windows)
 *.symbols.zip
 Assets/Firebase/Plugins/x86_64/FirebaseCppApp-*.bundle
+Assets/Firebase/Plugins/x86_64/FirebaseCppApp-*.bundle.meta
