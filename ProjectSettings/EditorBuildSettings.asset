@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_TangentLudoEmpire/Scenes/Boot.unity
+    guid: 0aefe61abf43a154fb6ca503cd951a82
+  - enabled: 1
+    path: Assets/_TangentLudoEmpire/Scenes/Dashboard.unity
+    guid: a397728614cdd914690261601d8cdc7b
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/MainMenu-new.unity
+    guid: bd23d682074a326448052ffbd30f5fde
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 014c6e478a52e4242b6f4f25d17c71be
+  - enabled: 0
+    path: Assets/Scenes/KillaBandarMilestone_Test.unity
+    guid: 75b23b40e5b0a92469fabddd91a45220
+  - enabled: 0
+    path: Assets/Scenes/GulliDandaMilestone_Test.unity
+    guid: 686e2dc4c0fcbac43923b3f66895bf22
+  - enabled: 0
+    path: Assets/Scenes/EmpireMilestone1_Test.unity
+    guid: 5fc4c0ad5d8dee24cb5b48f34217695c
+  - enabled: 0
+    path: Assets/Android-Ludo-3D-v3.unity
+    guid: 1e76a8465ca75184ab5ad791a2766dd4
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

@@ -1,0 +1,76 @@
+TANGENT LUDO EMPIRE — GOOGLE PLAY STORE LISTING DRAFT
+======================================================
+
+*** COMPLIANCE-REVIEW DRAFT — DO NOT SUBMIT AS-IS ***
+This app processes real-money deposits/withdrawals (JazzCash/Easypaisa). Google Play's Gambling
+policy restricts real-money-wagering apps to a short list of approved countries, and the target
+market here (Pakistan) is very likely NOT currently on that list. Confirm current policy + country
+eligibility, and complete any required Google restricted-content permission process, BEFORE
+submitting anything below. See PRODUCTION_SETUP.md section 5. This draft also assumes the real
+backend, real KYC provider, and real payment merchant credentials from PRODUCTION_SETUP.md sections
+1-3 are already live — do not submit while any of those are still mock.
+
+---------------------------------------------------------------
+TITLE (max 30 characters for the app name field)
+---------------------------------------------------------------
+Tangent Ludo Empire - Win Real Cash
+
+(30-char app-title field will likely truncate this - Play Console's actual "App name" field caps at
+30 characters. Suggested trimmed value for that specific field: "Tangent Ludo Empire" (20 chars).
+Use the full line above only for marketing copy that isn't in the strict app-name field.)
+
+---------------------------------------------------------------
+SHORT DESCRIPTION (max 80 characters)
+---------------------------------------------------------------
+Play Ludo, Win Real Money via JazzCash/Easypaisa
+
+(49 characters - within the 80-char limit.)
+
+---------------------------------------------------------------
+FULL DESCRIPTION (~80 words; max 4000 characters allowed by Play Console)
+---------------------------------------------------------------
+Tangent Ludo Empire brings classic Ludo to life with real-money tournaments and quick-play rooms.
+Roll server-verified dice, race your tokens home, and cash out winnings instantly via JazzCash or
+Easypaisa. Every account completes KYC before withdrawing, keeping payouts secure. Our anti-cheat
+system validates every move and roll server-side, freezing suspicious accounts automatically. Join
+scheduled tournaments for bigger prize pools, climb the leaderboard, and invite friends for bonuses.
+Simple, fair, and built for serious Ludo players. 18+ only, please play responsibly.
+
+(Word count: 80 - verified with `wc -w`, not estimated.)
+
+---------------------------------------------------------------
+CATEGORY
+---------------------------------------------------------------
+Primary category: Board
+Content rating questionnaire: answer YES to "real money gambling / real-money contests" -
+do not under-declare this; Play Console's own content-rating engine determines the resulting
+rating and regional availability from the questionnaire, not from this document.
+Target market note: Pakistan — SEE THE COMPLIANCE BANNER AT THE TOP OF THIS FILE FIRST.
+
+---------------------------------------------------------------
+SCREENSHOTS (8 required, 1080x1920 PNG, phone)
+---------------------------------------------------------------
+NOT INCLUDED — this session has no way to capture real, current gameplay screenshots (that requires
+running the actual built app on a device/emulator and taking real captures, not synthesized images
+presented as gameplay). Capture these 8 before submission, each showing a real, current screen:
+  1. Dashboard / home screen with wallet balance visible
+  2. Active Ludo match mid-game (board + dice + tokens)
+  3. Room list / "create room" screen with entry-fee options
+  4. Tournament bracket screen
+  5. Leaderboard screen
+  6. Deposit flow (JazzCash/Easypaisa selection)
+  7. Withdraw flow / KYC status screen
+  8. Settings screen showing the 18+ / Play Responsibly banner (LegalPagesUI)
+
+---------------------------------------------------------------
+FEATURE GRAPHIC (1024x500 PNG/JPG)
+---------------------------------------------------------------
+NOT INCLUDED — needs real brand/marketing artwork from a designer; a placeholder banner would look
+unfinished on the actual store listing and is not worth fabricating here.
+
+---------------------------------------------------------------
+PRIVACY POLICY URL (required by Play Console)
+---------------------------------------------------------------
+NOT SET — publish PrivacyPolicy.txt content (Assets/_TangentLudoEmpire/Resources/LegalText/PrivacyPolicy.txt,
+also shown in-app via LegalPagesUI) at a real public HTTPS URL and enter that URL in Play Console.
+That file is itself still placeholder legal copy pending counsel review - see its own header note.

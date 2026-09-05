@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a76e07b6d2db4075a8c63439521b2059, type: 3}
+  m_Name: PaymentConfig
+  m_EditorClassIdentifier: Assembly-CSharp::TangentLudoEmpire.Payments.PaymentConfig
+  JazzCash_MerchantID: SANDBOX_MC_00001
+  JazzCash_Password: sandbox-not-a-real-secret
+  JazzCash_IntegritySalt: sandbox-salt-ae57cfd63ea9
+  JazzCash_ReturnURL: https://sandbox.jazzcash.com.pk/return
+  Easypaisa_StoreID: SANDBOX_STORE_001
+  Easypaisa_StorePassword: sandbox-not-a-real-secret
+  Easypaisa_PostBackURL: https://sandbox.easypaisa.com.pk/postback
+  IsProductionMode: 0
+  JazzCash_LiveUrl: https://payments.jazzcash.com.pk/CustomerPortal/transactionmanagement/merchantform/
+  Easypaisa_LiveUrl: https://easypay.easypaisa.com.pk/easypay/Index.jsf
+  WebhookBaseURL: https://your-api.tangentludo.com
+  DeepLinkScheme: tle

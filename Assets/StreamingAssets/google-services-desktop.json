@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1031907037446",
+    "project_id": "tangentludoempire",
+    "storage_bucket": "tangentludoempire.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031907037446:android:8ebafb54f10388125d4e87",
+        "android_client_info": {
+          "package_name": "com.tangent.ludoempire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH4Uu_f_XOi2FsjXzyMts5-9l-xIy0fsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

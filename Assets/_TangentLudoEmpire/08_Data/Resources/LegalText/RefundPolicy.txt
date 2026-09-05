@@ -1,0 +1,39 @@
+REFUND POLICY - Tangent Ludo Empire
+
+Last updated: 2026-09-04
+
+PLACEHOLDER LEGAL TEXT - replace with counsel-reviewed copy before Play Store submission.
+
+1. AGE RESTRICTION
+This service, and any refund it describes, is available only to users aged 18 and over.
+
+2. DEPOSITS
+Deposits are processed instantly through JazzCash/Easypaisa once the gateway confirms
+payment. A deposit that fails or is not confirmed by the gateway is never credited to
+your wallet - no refund action is needed in that case since no charge was completed
+successfully on our side. If a payment was deducted by your provider but never appears
+in your wallet, contact support with your transaction reference.
+
+3. WITHDRAWALS
+Withdrawal requests are deducted from your wallet balance immediately upon request.
+Requests up to Rs. 10,000 are paid out automatically; larger requests require manual
+review. If a payout fails after your balance was already deducted, the amount is
+automatically refunded to your in-app wallet.
+
+4. GAME OUTCOMES
+Entry fees and winnings are determined by verified, server-authoritative gameplay.
+Once a match is validated and complete, entry fees and payouts are final and are not
+refundable on the basis of dissatisfaction with the outcome.
+
+5. FRAUD / ANTI-CHEAT
+If our anti-cheat systems determine that a match involved illegal moves, timing
+manipulation, or other cheating, we reserve the right to void the affected
+transaction(s), freeze the account under review, and withhold or reverse related
+winnings, in accordance with these policies.
+
+6. PLAY RESPONSIBLY
+Play within your means. This policy does not create an entitlement to a refund for
+losses incurred during normal, fairly-played games.
+
+For a refund inquiry, contact support through the in-app support channel with your
+transaction reference.

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84bc4ced8af4b84b22f4352069cb8fe, type: 3}
+  m_Name: SecurityConfig
+  m_EditorClassIdentifier: Assembly-CSharp::TangentLudoEmpire.Core.SecurityConfig
+  localDataKeyBase64: cMUPk6I04jp2TpKmy81t6atYJG8cosKEWdEPjfpDHO4=
+  kdfSaltBase64: zaeyWdu4lW7yziwykJMABQ==
+  kdfIterations: 100000
+  hmacSecret: J/YQF8O7KjBgHq2NZUhU+J2/jCO1OwweyNLHl72a7Jo=
+  apiBaseUrl: 
+  useServerKeyWhenAvailable: 1
+  wipeOnTamper: 1
+  requireServerConfirmationToLock: 1
+  dailyAdCap: 50
+  speedHackGameLimit: 10
+  speedHackWindowSeconds: 60
+  walletToleranceFraction: 0.1

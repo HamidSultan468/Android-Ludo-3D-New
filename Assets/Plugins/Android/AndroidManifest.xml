@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Phase 3.5 (Tangent Ludo Empire): custom main manifest, needed only to add the deep-link intent-filter
+  for TangentLudoEmpire.Payments.DeepLinkManager (tle://callback - see PaymentConfig.DeepLinkScheme and
+  BACKEND_WEBHOOK_SPEC.md). Requires ProjectSettings > Player > Publishing Settings >
+  "Custom Main Manifest" ON (ProjectSettings.asset: useCustomMainManifest: 1) or Unity ignores this file
+  entirely and silently falls back to auto-generating one.
+
+  Everything below the new <intent-filter> (marked) is copied VERBATIM from Unity 6000.5.4f1's own last
+  auto-generated unityLibrary/src/main/AndroidManifest.xml for this exact project (captured from
+  Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/AndroidManifest.xml after a successful
+  BuildDebugApk run) - not hand-authored from scratch, specifically to avoid guessing at UnityPlayerGameActivity's
+  required attributes/meta-data and risking the launch crash this project already had to fix once before.
+  If you change Player Settings that affect this content (orientation, XR, min API level's feature
+  requirements, etc.), this file will NOT auto-update - keep it in sync by hand, or temporarily switch
+  "Custom Main Manifest" off, build once, and re-diff against the freshly auto-generated manifest.
+
+  KEEP IN SYNC: the <data android:scheme="tle" .../> value below must match PaymentConfig.DeepLinkScheme.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-feature android:glEsVersion="0x00030000" />
+  <uses-feature android:name="android.hardware.vulkan.version" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+  <application android:appCategory="game" android:enableOnBackInvokedCallback="true" android:extractNativeLibs="true">
+    <meta-data android:name="unity.splash-mode" android:value="0" />
+    <meta-data android:name="unity.splash-enable" android:value="True" />
+    <meta-data android:name="unity.requested-visible-insets" android:value="" />
+    <meta-data android:name="unity.system-bars-behavior" android:value="ShowTransientBarsBySwipe" />
+    <meta-data android:name="unity.render-outside-safearea" android:value="True" />
+    <meta-data android:name="notch.config" android:value="portrait|landscape" />
+    <meta-data android:name="unity.auto-report-fully-drawn" android:value="true" />
+    <meta-data android:name="unity.strip-engine-code" android:value="true" />
+    <meta-data android:name="unity.run-without-focus" android:value="false" />
+    <meta-data android:name="unity.auto-set-game-state" android:value="true" />
+    <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density" android:enabled="true" android:exported="true" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.unity3d.player.UnityPlayerGameActivity" android:resizeableActivity="true" android:screenOrientation="fullUser" android:theme="@style/BaseUnityGameActivityTheme">
+      <intent-filter>
+        <category android:name="android.intent.category.LAUNCHER" />
+        <action android:name="android.intent.action.MAIN" />
+      </intent-filter>
+      <!-- ===== Phase 3.5 addition: payment deep link (DeepLinkManager / tle://callback) ===== -->
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="tle" android:host="callback" />
+      </intent-filter>
+      <!-- ===== end Phase 3.5 addition ===== -->
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+      <meta-data android:name="android.app.lib_name" android:value="game" />
+      <meta-data android:name="WindowManagerPreference:FreeformWindowSize" android:value="@string/FreeformWindowSize_maximize" />
+      <meta-data android:name="WindowManagerPreference:FreeformWindowOrientation" android:value="@string/FreeformWindowOrientation_landscape" />
+      <meta-data android:name="notch_support" android:value="true" />
+      <layout android:minHeight="300px" android:minWidth="400px" />
+    </activity>
+  </application>
+</manifest>

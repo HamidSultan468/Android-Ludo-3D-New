@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd26aa1d10aa4bc5a6e201410933a50f, type: 3}
+  m_Name: DashboardButtons
+  m_EditorClassIdentifier: Assembly-CSharp::TangentLudoEmpire.Core.DashboardButtonData
+  buttons:
+  - id: ludo
+    label: Ludo
+    icon: {fileID: 0}
+    action: 2
+    targetScreen: 0
+    comingSoonText: Coming Soon
+  - id: killabandar
+    label: Killa Bandar
+    icon: {fileID: 0}
+    action: 0
+    targetScreen: 0
+    comingSoonText: Coming Soon
+  - id: gullidanda
+    label: Gulli Danda
+    icon: {fileID: 0}
+    action: 0
+    targetScreen: 0
+    comingSoonText: Coming Soon
+  - id: tournament
+    label: Tournament
+    icon: {fileID: 0}
+    action: 0
+    targetScreen: 0
+    comingSoonText: Coming Soon
+  - id: settings
+    label: Settings
+    icon: {fileID: 0}
+    action: 0
+    targetScreen: 0
+    comingSoonText: Coming Soon
+  - id: language
+    label: Language
+    icon: {fileID: 0}
+    action: 0
+    targetScreen: 0
+    comingSoonText: Coming Soon
+  - id: base
+    label: Base
+    icon: {fileID: 0}
+    action: 0
+    targetScreen: 0
+    comingSoonText: Coming Soon
+  - id: links
+    label: Links
+    icon: {fileID: 0}
+    action: 0
+    targetScreen: 0
+    comingSoonText: Coming Soon
+  - id: exit
+    label: Exit
+    icon: {fileID: 0}
+    action: 3
+    targetScreen: 0
+    comingSoonText: Coming Soon

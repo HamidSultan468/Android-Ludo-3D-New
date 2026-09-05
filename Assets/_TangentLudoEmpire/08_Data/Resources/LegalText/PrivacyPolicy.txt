@@ -1,0 +1,41 @@
+PRIVACY POLICY - Tangent Ludo Empire
+
+Last updated: 2026-09-04
+
+PLACEHOLDER LEGAL TEXT - replace with counsel-reviewed copy before Play Store submission.
+
+1. AGE RESTRICTION
+This service is intended for users aged 18 and over. We do not knowingly collect data
+from anyone under 18.
+
+2. DATA WE COLLECT
+- Account identifiers (device/profile id, KYC details required by payment regulation).
+- Wallet transaction history (deposits, withdrawals, entry fees, winnings).
+- Gameplay telemetry (matches played, dice rolls, moves) for anti-cheat and analytics.
+- Crash and diagnostic logs (Firebase Crashlytics) to fix stability issues.
+
+3. HOW WE USE IT
+- To operate your wallet and process deposits/withdrawals through licensed payment
+  gateways (JazzCash, Easypaisa).
+- To detect fraud and cheating (server-authoritative dice, move validation, speed-hack
+  detection) and protect the integrity of real-money games.
+- To improve the app via aggregated, anonymized analytics.
+
+4. DATA PROTECTION
+Local wallet and progression data is encrypted (AES-256) and integrity-checked before
+use. We never store your payment credentials - deposits/withdrawals go directly through
+the payment provider's own secure gateway.
+
+5. THIRD PARTIES
+We use Firebase (Analytics, Crashlytics) and licensed payment gateways (JazzCash,
+Easypaisa) as data processors. We do not sell your personal data.
+
+6. PLAY RESPONSIBLY
+We may use your play patterns to surface responsible-gaming reminders or, in extreme
+cases, to pause an account pending a wellness check-in.
+
+7. YOUR RIGHTS
+You may request a copy of your data or account deletion through in-app support,
+subject to the retention we are legally required to keep for financial records.
+
+For questions, contact support through the in-app support channel.

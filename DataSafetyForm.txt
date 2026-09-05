@@ -1,0 +1,78 @@
+TANGENT LUDO EMPIRE — PLAY CONSOLE "DATA SAFETY" SECTION DRAFT
+================================================================
+
+*** COMPLIANCE-REVIEW DRAFT — DO NOT SUBMIT AS-IS ***
+This maps this app's ACTUAL current data handling (as built through Phase 5) onto Play Console's Data
+Safety questionnaire categories. It is a starting draft for whoever fills in the real form, not a
+substitute for reading each question directly in Play Console — the questionnaire's exact wording and
+options change over time. Have this reviewed against your live app + live backend (once one exists;
+see PRODUCTION_SETUP.md section 2) before submitting, and update it if data handling changes.
+
+---------------------------------------------------------------
+DOES YOUR APP COLLECT OR SHARE ANY OF THE REQUIRED USER DATA TYPES?
+---------------------------------------------------------------
+YES.
+
+---------------------------------------------------------------
+DATA TYPES COLLECTED
+---------------------------------------------------------------
+Financial info
+  - Purchase history         -> Collected. Wallet transaction ledger (deposits, withdrawals, entry
+                                 fees, winnings) stored locally AES-256 encrypted (MoneyWallet); a real
+                                 backend integration (pending, see PRODUCTION_SETUP.md) would also hold
+                                 the authoritative copy server-side.
+  - Payment info              -> NOT collected/stored by this app. Deposits/withdrawals go directly
+                                 through JazzCash/Easypaisa's own gateway - this app never sees or
+                                 stores card/account numbers (see JazzCashGateway/EasypaisaGateway
+                                 class remarks: "forbidden from ever writing these into a log line").
+
+Personal info
+  - User IDs                  -> Collected. Device/profile identifier, KYC-submitted identity details
+                                 (KycManager) required by payment-processor regulation for withdrawals.
+  - Name                      -> Collected (display name, KYC legal name where required for payout).
+
+App activity
+  - App interactions          -> Collected. Gameplay telemetry (matches played, dice rolls, moves) for
+                                 anti-cheat (GameplayAntiCheatManager) and analytics (AnalyticsBridge/
+                                 FirebaseManager - mock today, real Firebase pending per
+                                 PRODUCTION_SETUP.md section 1).
+  - Crash logs / diagnostics   -> Collected. CrashlyticsManager (mock today; real Crashlytics pending).
+
+Device or other IDs
+  - Device or other identifiers -> Collected. SystemInfo.deviceUniqueIdentifier, used for anti-fraud
+                                 rate limiting and account binding (AntiFraudManager).
+
+Data types this app does NOT collect: location, contacts, photos/videos, audio, messages, health/fitness.
+
+---------------------------------------------------------------
+IS ALL OF THE USER DATA COLLECTED BY YOUR APP ENCRYPTED IN TRANSIT?
+---------------------------------------------------------------
+YES, once a real HTTPS backend exists (PRODUCTION_SETUP.md section 2) - BackendService already only
+ever builds HTTPS-shaped requests with an HMAC-SHA256 request signature. Currently NO real backend is
+deployed, so nothing is actually in transit yet - do not answer YES here until section 2 is complete.
+
+---------------------------------------------------------------
+DO YOU PROVIDE A WAY FOR USERS TO REQUEST THAT THEIR DATA IS DELETED?
+---------------------------------------------------------------
+Partially built: local encrypted save data can be wiped (SecurityConfig.wipeOnTamper path already
+exists for tamper cases). A user-initiated "delete my account/data" flow through in-app support is
+described in PrivacyPolicy.txt (section 7) but not yet a dedicated UI flow - build one, or route it
+through backend support tooling, before answering YES on the real form.
+
+---------------------------------------------------------------
+IS THIS DATA SHARED WITH THIRD PARTIES?
+---------------------------------------------------------------
+YES:
+  - JazzCash / Easypaisa (payment processors) - transaction amount + your account reference, to
+    process deposits/withdrawals. Required for the app's core function.
+  - Firebase (Google) - Analytics + Crashlytics, once the real SDK is installed (section 1). Standard
+    Firebase data-processing terms apply.
+This app does not sell personal data to third parties.
+
+---------------------------------------------------------------
+SECURITY PRACTICES DECLARED
+---------------------------------------------------------------
+  [x] Data is encrypted at rest (AES-256, local wallet/profile/leaderboard/history files)
+  [x] Data is encrypted in transit (once a real backend exists - see note above)
+  [ ] You can request that data be deleted (partial - see note above, finish before checking this)
+  [x] Committed to Google Play's Families Policy: N/A - this app is 18+ only, not directed at children

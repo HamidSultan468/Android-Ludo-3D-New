@@ -1,0 +1,35 @@
+TERMS & CONDITIONS - Tangent Ludo Empire
+
+Last updated: 2026-09-04
+
+PLACEHOLDER LEGAL TEXT - replace with counsel-reviewed copy before Play Store submission.
+
+1. AGE RESTRICTION
+This app is intended for users aged 18 and over. By creating an account and depositing
+real money, you confirm that you are at least 18 years old and legally permitted to use
+real-money gaming services in your jurisdiction.
+
+2. PLAY RESPONSIBLY
+Ludo Empire is a skill-and-chance game involving real money. Play within your means.
+Set your own limits. If gaming stops being fun, stop playing and seek support.
+
+3. ACCOUNT & WALLET
+Your in-app wallet balance reflects funds you have deposited via a supported payment
+provider (JazzCash, Easypaisa) plus any winnings, minus withdrawals and entry fees.
+All financial data is encrypted at rest and never trusted from the client alone -
+every credit is verified server-side before your balance changes.
+
+4. FAIR PLAY & ANTI-CHEAT
+Dice rolls are server-authoritative. Illegal moves, timing manipulation, or any other
+attempt to gain an unfair advantage may result in your account being frozen pending
+review, forfeiture of the funds involved, and permanent suspension.
+
+5. LIABILITY
+The service is provided "as is". We are not liable for losses arising from your use of
+the app beyond amounts held in your wallet, to the extent permitted by applicable law.
+
+6. CHANGES
+These terms may be updated from time to time; continued use after an update
+constitutes acceptance of the revised terms.
+
+For questions, contact support through the in-app support channel.
